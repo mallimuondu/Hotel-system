@@ -91,10 +91,13 @@ def cheking():
                 Delete2()
                 c.execute('INSERT INTO billing(bill)VALUES(25000)')
                 conn.commit()
+            else:
+                print('i do not understund you')
         elif b == 'b':
             print('WELCOME')
         else:
-            print('i do not understund you')
+            print('i do not understund you try again')
+            new_not()
     new_not()
     def what_do_want_todo():
         print('what do you want  to do')
@@ -140,6 +143,12 @@ def cheking():
                     print('sliding ..')
                     time.sleep(2)
                     print('you are in the water')
+                elif f == '' or f == ' ':
+                    print('you have inputed nothing try again')
+                    pool()
+                else:
+                    print('i do not under stund you try again')
+                    pool()
                 g = input('had fun at the pool area.do you want to do anithing else  y or n:')
                 if g == 'y':
                     what_do_want_todo()
@@ -200,6 +209,12 @@ def cheking():
                             print('that is 40 for 1 cup')
                             c.execute('INSERT INTO billing(bill)VALUES(40)')
                             conn.commit()
+                        elif a == '' or a == ' ':
+                            print('you have inputed nothing try again')
+                            breackfirst()
+                        else:
+                            print('i do not under stund you try again')
+                            breackfirst()
 
                         h = input('you want to do anithing else  y or n:')
                         if h == 'y':
@@ -237,6 +252,12 @@ def cheking():
                             print('that is 100 for a plate')
                             c.execute('INSERT INTO billing(bill)VALUES(960)')
                             conn.commit()
+                        elif d == '' or d == ' ':
+                            print('you have inputed nothing try again')
+                            lunch()
+                        else:
+                            print('i do not under stund you try again')
+                            lunch()
                     lunch()
                 elif z == 'c':
                     def desert():
@@ -257,6 +278,12 @@ def cheking():
                             print('that is 40 for one bottle')
                             c.execute('INSERT INTO billing(bill)VALUES(960)')
                             conn.commit()
+                        elif a == '' or a == ' ':
+                            print('you have inputed nothing try again')
+                            desert()
+                        else:
+                            print('i do not under stund you try again')
+                            desert()
                     desert()
                 elif z == 'd':
                     def dinner():
@@ -288,7 +315,19 @@ def cheking():
                             print('that is 100 for a plate')
                             c.execute('INSERT INTO billing(bill)VALUES(960)')
                             conn.commit()
+                        elif d == '' or d == ' ':
+                            print('you have inputed nothing try again')
+                            dinner()
+                        else:
+                            print('i do not under stund you try again')
+                            dinner()
                     dinner()
+                elif z == '' or z  == ' ':
+                    print('you have inputed nothing try again')
+                    eating()
+                else:
+                    print('i do not under stund you try again')
+                    eating()
                 g = input('had a nice meal.do you want to do anithing else  y or n:')
                 if g == 'y':
                     what_do_want_todo()
@@ -312,8 +351,20 @@ def cheking():
                         print('ok')
                     elif b == 'both':
                         print('ok')
+                    elif b == '' or b  == ' ':
+                        print('you have inputed nothing try again')
+                        thieta()
+                    else:
+                        print('i do not under stund you try again')
+                        thieta()
                 elif a == 'no':
                     pass
+                elif a == '' or a  == ' ':
+                    print('you have inputed nothing try again')
+                    thieta()
+                else:
+                    print('i do not under stund you try again')
+                    thieta()
                 g = input('enjoyed the movei .do you want to do anithing else  y or n:')
                 if g == 'y':
                     what_do_want_todo()
@@ -356,7 +407,12 @@ def cheking():
                     what_do_want_todo()
                 else:
                     print('then you can go to you room')                        
-
+        elif e == 'h':
+            pass
+        else:
+            print('i do not understund you try again')
+            what_do_want_todo()
+            
 
 
 
