@@ -16,6 +16,7 @@ def cheking():
         b = input('''are you:
         a.new
         b.not new
+        c.none resident
         ''')
         if b == 'a':
             d = input('hello what is your first name:')
@@ -95,6 +96,8 @@ def cheking():
                 print('i do not understund you')
         elif b == 'b':
             print('WELCOME')
+        elif b == 'c':
+            pass
         else:
             print('i do not understund you try again')
             new_not()
@@ -218,7 +221,7 @@ def cheking():
 
                         h = input('you want to do anithing else  y or n:')
                         if h == 'y':
-                            what_do_want_todo()
+                            breackfirst()
                         else:
                             pass
                     breackfirst()
@@ -226,7 +229,7 @@ def cheking():
                     def lunch():
                         d = input('''
                         WE HAVE:
-                        a.chips and somthing else
+                        a.chips
                         b.chiken
                         d.pizza
                         e.githeri
@@ -258,6 +261,11 @@ def cheking():
                         else:
                             print('i do not under stund you try again')
                             lunch()
+                        h = input('you want to do anithing else  y or n:')
+                        if h == 'y':
+                            lunch()
+                        else:
+                            pass
                     lunch()
                 elif z == 'c':
                     def desert():
@@ -284,12 +292,17 @@ def cheking():
                         else:
                             print('i do not under stund you try again')
                             desert()
+                        h = input('you want to do anithing else  y or n:')
+                        if h == 'y':
+                            desert()
+                        else:
+                            pass
                     desert()
                 elif z == 'd':
                     def dinner():
                         d = input('''
                         WE HAVE:
-                        a.chips and somthing else
+                        a.chips
                         b.chiken
                         d.pizza
                         e.githeri
@@ -321,6 +334,11 @@ def cheking():
                         else:
                             print('i do not under stund you try again')
                             dinner()
+                        h = input('you want to do anithing else  y or n:')
+                        if h == 'y':
+                            dinner()
+                        else:
+                            pass
                     dinner()
                 elif z == '' or z  == ' ':
                     print('you have inputed nothing try again')
@@ -383,6 +401,7 @@ def cheking():
                 else:
                     print('then you can go to you room')
         elif e == 'f':
+            def beach():
                 g = input(''' WHAT DO YOU WANT TO DO:
                 a. swim
                 b.stay on sand and bild
@@ -392,11 +411,21 @@ def cheking():
                     import time
                     time.sleep(2)
                     print('here is a big waive')
+                elif g == 'b':
+                    pass
+                elif g == '' or g == ' ':
+                    print('you have inputed nothing try again')
+                    beach()
+                else:
+                    print('i do not under stund you try again')
+                    beach()
+                
                 g = input('enjoyed your self at the beach. make shure you take a chower befor entering .do you want to do anithing else  y or n:')
                 if g == 'y':
                     what_do_want_todo()
                 else:
-                    print('then you can go to you room')           
+                    print('then you can go to you room')  
+            beach()
         elif e == 'g':
                 g = input(''' WHAT DO YOU WANT TO DO:
                 a. weghts
@@ -412,7 +441,6 @@ def cheking():
         else:
             print('i do not understund you try again')
             what_do_want_todo()
-            
 
 
 
