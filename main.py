@@ -20,8 +20,15 @@ def cheking():
         ''')
         if b == 'a':
             d = input('hello what is your first name:')
-            a = input('how many days are you staying:')
-            print('WELCOME '+d+' you are staing for '+a+' days')
+            def days():
+                try:
+                    dayss = int(input("pls insert how many days you are staying: "))
+                    daysss = str(dayss)
+                except ValueError:
+                    print ('That is not a number try again')
+                    days()
+                    print('WELCOME '+d+' you are staing for '+dayss+' days')
+            days()
             d = input('''
             WE HAVE 4 TYPES OF ROOMS
             a.single room 1-10-5000
