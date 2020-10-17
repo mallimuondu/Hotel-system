@@ -65,8 +65,6 @@ def cheking():
                     c.execute("DELETE FROM duble_rooms WHERE roomnumber=?", (n,))
                     conn.commit()
                 Delete1()                
-                n = 10000
-                total += n
                 c.execute('INSERT INTO billing(bill)VALUES(10000)')
                 conn.commit()
             elif d == 'd':
@@ -81,8 +79,6 @@ def cheking():
                     c.execute("DELETE FROM family_rooms WHERE roomnumber=?", (n,))
                     conn.commit()
                 Delete2()
-                n = 5000
-                total += n
                 c.execute('INSERT INTO billing(bill)VALUES(15000)')
                 conn.commit()
             elif d == 'e':
